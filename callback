@@ -1,0 +1,14 @@
+let x = function()
+{
+console.log("Outer function");
+}
+
+let y = function(callback)
+{
+console.log("inner function")
+
+callback();
+
+}
+
+y(x);
