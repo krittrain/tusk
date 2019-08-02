@@ -1,0 +1,28 @@
+var peopleDyanamicProto = function(name,age,city){
+
+this.name = name;
+this.age = age;
+this.city = city;
+if(typeof this.printperson !== 'function'){
+peopleDyanamicProto.prototype.printperson = function(){
+ console.log(this.name + "," + this.age + "," + this.city);
+ 
+ };
+
+}
+};
+
+var person1 = new peopleDyanamicProto('kritika','23','lucknow');
+person1.printperson();
+
+console.log('name' in person1);
+ 
+
+
+
+
+
+
+
+
+
